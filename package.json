@@ -1,0 +1,27 @@
+{
+  "name": "quipu-e2e",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tests": "playwright test --project=chrome",
+    "tests:smoke": "playwright test --project=chrome --grep='smoke'",
+    "tests:headed": "playwright test --project=chrome --headed",
+    "tests:all": "playwright test",
+    "tests:firefox": "playwright test --project=firefox",
+    "tests:safari": "playwright test --project=webkit",
+    "install:browsers": "npx playwright install --with-deps",
+    "report": "npx playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.45.3",
+    "@types/node": "^22.1.0",
+    "dotenv": "^16.4.5"
+  },
+  "dependencies": {
+    "fs": "^0.0.1-security"
+  }
+}
